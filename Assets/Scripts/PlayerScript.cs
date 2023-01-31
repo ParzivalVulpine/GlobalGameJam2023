@@ -1,3 +1,9 @@
+//Script: PlayerScript.cs
+//Author: Michael Spangenberg
+//Purpose: A script to control the player character though keyboard inputs
+//Todo List: 
+
+
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -13,6 +19,7 @@ public class PlayerScript : MonoBehaviour
     float moveSpeed = 10;
     float sprintSpeed = 10;
     int jumpCounter = 0;
+    int numOfJumps = 2;
 
     // Update is called once per frame
     void Update()
@@ -75,13 +82,23 @@ public class PlayerScript : MonoBehaviour
         // if checkJump returns true, jump
         if(checkJump())
         {
-            rb.AddForce(new Vector2(0f,jump));
-            jumpCounter = jumpCounter + 1;
+            if (jumpCounter == 0)
+            {
+                rb.AddForce(new Vector2(0f, jump));
+                jumpCounter = jumpCounter + 1;
+            }
+            //Adds additional force to jumps after the first one
+            else
+            {
+                rb.AddForce(new Vector2(0f, jump*2));
+                jumpCounter = jumpCounter + 1;
+            }
+            
         }
         
         
     }
-    //Sets the canJump variable to true upon colliding with an object
+    //Resets the jumpCounter to zero upon colliding with an object
     private void OnCollisionEnter2D(Collision2D collision)
     {
         jumpCounter = 0;
@@ -90,7 +107,7 @@ public class PlayerScript : MonoBehaviour
     private bool checkJump()
     {
         // If player has not jumped twice, return true
-        if (jumpCounter < 2)
+        if (jumpCounter < numOfJumps)
         {
             return true;
         }
