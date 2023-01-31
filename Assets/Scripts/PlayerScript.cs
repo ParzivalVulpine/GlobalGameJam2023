@@ -7,17 +7,12 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    bool canJump = true;
     bool sprinting = false;
     public Rigidbody2D rb;
     float jump = 500;
     float moveSpeed = 10;
     float sprintSpeed = 10;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    int jumpCounter = 0;
 
     // Update is called once per frame
     void Update()
@@ -30,7 +25,7 @@ public class PlayerScript : MonoBehaviour
         else if(Input.GetKey("a") == true){
             MoveLeft();
         }
-        if(Input.GetKey("space") == true)
+        if(Input.GetKeyDown("space") == true)
         {
             Jump();
         }
@@ -77,17 +72,31 @@ public class PlayerScript : MonoBehaviour
 
     void Jump()
     {
-        // if canJump is true, jump
-        if(canJump == true)
+        // if checkJump returns true, jump
+        if(checkJump())
         {
             rb.AddForce(new Vector2(0f,jump));
+            jumpCounter = jumpCounter + 1;
         }
-        //Set canJump to false while player is in the air
-        canJump = false;
+        
+        
     }
     //Sets the canJump variable to true upon colliding with an object
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        canJump = true;
+        jumpCounter = 0;
+    }
+    //Checks if player can jump
+    private bool checkJump()
+    {
+        // If player has not jumped twice, return true
+        if (jumpCounter < 2)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
