@@ -22,21 +22,21 @@ public class PlayerScript : MonoBehaviour
         {
             MoveRight();
         }
-        else if(Input.GetKey("a") == true){
+        if(Input.GetKey("a") == true){
             MoveLeft();
         }
         if(Input.GetKeyDown("space") == true)
         {
             Jump();
         }
-        if (Input.GetKey("left shift") == true)
-        {
-            sprinting = true;
-        }
-        else
-        {
-            sprinting = false;
-        }
+        //if (Input.GetKey("left shift") == true)
+        //{
+        //    sprinting = true;
+        //}
+        //else
+        //{
+        //    sprinting = false;
+        //}
     }
     //Moves the player right
     void MoveRight()
