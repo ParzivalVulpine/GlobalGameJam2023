@@ -1,9 +1,10 @@
 //Script: PlayerScript.cs
 //Author: Michael Spangenberg
 //Purpose: A script to control the player character though keyboard inputs
-//Todo List: 
+ 
 
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -13,14 +14,14 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    bool sprinting = false;
     public Rigidbody2D rb;
-    float jump = 500;
+    float jump = 10;
     float moveSpeed = 10;
-    float sprintSpeed = 10;
     int jumpCounter = 0;
     int numOfJumps = 2;
+    public int acornCounter = 0;
 
+   
     // Update is called once per frame
     void Update()
     {
@@ -36,45 +37,16 @@ public class PlayerScript : MonoBehaviour
         {
             Jump();
         }
-        //if (Input.GetKey("left shift") == true)
-        //{
-        //    sprinting = true;
-        //}
-        //else
-        //{
-        //    sprinting = false;
-        //}
+        
     }
     //Moves the player right
     void MoveRight()
     {
-        // If player is sprinting
-        if(sprinting == true)
-        {
-            transform.position = transform.position + new Vector3(moveSpeed+sprintSpeed, 0, 0) * Time.deltaTime * Time.timeScale;
-
-        }
-        //If player is not sprinting
-        else
-        {
-            transform.position = transform.position + new Vector3(moveSpeed, 0, 0) * Time.deltaTime * Time.timeScale;
-
-        }
+        transform.position = transform.position + new Vector3(moveSpeed, 0, 0) * Time.deltaTime * Time.timeScale;
     }
     //Moves player left
     void MoveLeft() {
-        //If player is sprinting
-        if (sprinting == true)
-        {
-            transform.position = transform.position + new Vector3(-moveSpeed + -sprintSpeed, 0, 0) * Time.deltaTime * Time.timeScale;
-
-        }
-        //If player is not sprinting
-        else
-        {
-            transform.position = transform.position + new Vector3(-moveSpeed, 0, 0) * Time.deltaTime * Time.timeScale;
-
-        }
+        transform.position = transform.position + new Vector3(-moveSpeed, 0, 0) * Time.deltaTime * Time.timeScale; 
     }
 
     void Jump()
@@ -82,17 +54,18 @@ public class PlayerScript : MonoBehaviour
         // if checkJump returns true, jump
         if(checkJump())
         {
-            if (jumpCounter == 0)
+            if (jumpCounter < numOfJumps)
             {
-                rb.AddForce(new Vector2(0f, jump));
+                //rb.AddForce(new Vector2(0f, jump));
+                rb.velocity = new Vector2(rb.velocity.x,jump);
                 jumpCounter = jumpCounter + 1;
             }
-            //Adds additional force to jumps after the first one
-            else
-            {
-                rb.AddForce(new Vector2(0f, jump*2));
-                jumpCounter = jumpCounter + 1;
-            }
+            ////Adds additional force to jumps after the first one
+            //else
+            //{
+            //    rb.AddForce(new Vector2(0f, jump*1.1f));
+            //    jumpCounter = jumpCounter + 1;
+            //}
             
         }
         
@@ -101,12 +74,25 @@ public class PlayerScript : MonoBehaviour
     //Resets the jumpCounter to zero upon colliding with an object
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        jumpCounter = 0;
+       
+         jumpCounter = 0;
+        
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Acorn")
+        {
+            acornCounter++;
+        }
+        
+        
+        
+        Destroy(collision.gameObject);
     }
     //Checks if player can jump
     private bool checkJump()
     {
-        // If player has not jumped twice, return true
+        // If player has not jumped the number of jumps allowed, return true
         if (jumpCounter < numOfJumps)
         {
             return true;
@@ -115,5 +101,10 @@ public class PlayerScript : MonoBehaviour
         {
             return false;
         }
+    }
+    
+    public int GetAcornCounter()
+    {
+        return acornCounter;
     }
 }
