@@ -17,9 +17,9 @@ public class EndingScript : MonoBehaviour
     int minutes;
     int totalTime;
     public int threeStarTime;
-    bool star1;
-    bool star2;
-    bool star3;
+    [SerializeField] bool star1;
+    [SerializeField] bool star2;
+    [SerializeField] bool star3;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,10 +38,9 @@ public class EndingScript : MonoBehaviour
         
         
     }
+    // Checks conditions for stars
     public void Completed()
     {
-        
-        // Checks conditions for stars
         star1 = true;
         //Converts time to seconds
         totalTime = (minutes * 60) + seconds;
@@ -54,6 +53,7 @@ public class EndingScript : MonoBehaviour
             star3 = false;
             
         }
+        //Gets value of the acornCounter variable from the PlayerScript
         acorns = script.GetAcornCounter();
         
         if(acorns == totalAcorns)
@@ -66,6 +66,8 @@ public class EndingScript : MonoBehaviour
             star2 = false;
             
         }
+        //Todo: Save data for access elsewhere
+
     }
     void OnTriggerEnter2D(Collider2D other)
     {

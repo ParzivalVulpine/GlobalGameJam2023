@@ -48,7 +48,7 @@ public class PlayerScript : MonoBehaviour
     void MoveLeft() {
         transform.position = transform.position + new Vector3(-moveSpeed, 0, 0) * Time.deltaTime * Time.timeScale; 
     }
-
+    //Jumps
     void Jump()
     {
         // if checkJump returns true, jump
@@ -56,17 +56,9 @@ public class PlayerScript : MonoBehaviour
         {
             if (jumpCounter < numOfJumps)
             {
-                //rb.AddForce(new Vector2(0f, jump));
                 rb.velocity = new Vector2(rb.velocity.x,jump);
                 jumpCounter = jumpCounter + 1;
             }
-            ////Adds additional force to jumps after the first one
-            //else
-            //{
-            //    rb.AddForce(new Vector2(0f, jump*1.1f));
-            //    jumpCounter = jumpCounter + 1;
-            //}
-            
         }
         
         
@@ -102,7 +94,7 @@ public class PlayerScript : MonoBehaviour
             return false;
         }
     }
-    
+    //Gets the value of the acornCounter variable
     public int GetAcornCounter()
     {
         return acornCounter;
