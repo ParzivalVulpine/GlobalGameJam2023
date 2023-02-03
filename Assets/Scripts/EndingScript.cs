@@ -18,7 +18,7 @@ public class EndingScript : MonoBehaviour
     int seconds;
     int minutes;
     int totalTime;
-    int threeStarTime = 100;
+    public int threeStarTime;
     [SerializeField] bool star1;
     [SerializeField] bool star2;
     [SerializeField] bool star3;
