@@ -92,8 +92,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< Updated upstream
     width: 242
     height: 342.66666
+=======
+    width: 592.6667
+    height: 955.3333
+>>>>>>> Stashed changes
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
@@ -336,9 +341,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
     m_SelectedIDs: 50600000
     m_LastClickedID: 24656
     m_ExpandedIDs: 000000003860000000ca9a3b
+=======
+    m_SelectedIDs: 0e620000
+    m_LastClickedID: 25102
+    m_ExpandedIDs: 00000000fc61000000ca9a3b
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -366,7 +377,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
     m_ExpandedIDs: 0000000038600000
+=======
+    m_ExpandedIDs: 00000000fc610000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -504,9 +519,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
       m_SelectedIDs: ba5f0000
       m_LastClickedID: 24506
       m_ExpandedIDs: 04faffff
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 8463ffff5265ffffde65ffff2466ffff6a66ffffb066fffff666ffff3e67ffffca67ffff1068ffff6e69ffff00edffffd4edffff88eeffffcceeffff14efffff58efffff9cefffffe6efffff7ef5ffff04faffffca5f000016600000e06000001461000098610000bc610000
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -885,9 +906,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< Updated upstream
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
+=======
+    m_Target: {x: -11.530327, y: 77.6567, z: -0.67526454}
+    speed: 2
+    m_Value: {x: -11.530327, y: 77.6567, z: -0.67526454}
+>>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -937,9 +964,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< Updated upstream
     m_Target: 10
     speed: 2
     m_Value: 10
+=======
+    m_Target: 71.50916
+    speed: 2
+    m_Value: 71.50916
+>>>>>>> Stashed changes
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -957,7 +990,11 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
+<<<<<<< Updated upstream
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+=======
+  m_LastSceneViewRotation: {x: 0.5371376, y: 0.1111153, z: 0.07164425, w: -0.8330677}
+>>>>>>> Stashed changes
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -986,8 +1023,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 242
     y: 72.66667
+<<<<<<< Updated upstream
     width: 733.3333
     height: 321.66666
+=======
+    width: 1428.6667
+    height: 934.3333
+>>>>>>> Stashed changes
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1039,16 +1081,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< Updated upstream
       width: 733.3333
       height: 300.66666
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 366.66666, y: 150.33333}
+=======
+      width: 1428.6667
+      height: 913.3333
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 714.3334, y: 456.66666}
+>>>>>>> Stashed changes
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< Updated upstream
       x: -366.66666
       y: -150.33333
       width: 733.3333
@@ -1056,6 +1106,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1100, y: 482.5}
+=======
+      x: -714.3334
+      y: -456.66666
+      width: 1428.6667
+      height: 913.3333
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 2143, y: 1401.5}
+>>>>>>> Stashed changes
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
