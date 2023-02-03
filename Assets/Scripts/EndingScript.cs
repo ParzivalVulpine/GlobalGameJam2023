@@ -4,7 +4,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.IO;
+using UnityEngine.Playables;
+using JetBrains.Annotations;
 
 public class EndingScript : MonoBehaviour
 {
@@ -67,7 +69,7 @@ public class EndingScript : MonoBehaviour
             
         }
         //Todo: Save data for access elsewhere
-
+        JsonUtility.ToJson((star1,star2,star3));
     }
     void OnTriggerEnter2D(Collider2D other)
     {

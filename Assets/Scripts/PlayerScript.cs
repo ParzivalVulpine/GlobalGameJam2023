@@ -20,23 +20,33 @@ public class PlayerScript : MonoBehaviour
     int jumpCounter = 0;
     int numOfJumps = 2;
     public int acornCounter = 0;
-
+    bool canMove = false;
+    public Camera camera;
    
     // Update is called once per frame
     void Update()
     {
-        //Checks key presses for movement
-        if(Input.GetKey("d") == true)
+        if (canMove)
         {
-            MoveRight();
+            //Checks key presses for movement
+            if (Input.GetKey("d") == true)
+            {
+                MoveRight();
+            }
+            if (Input.GetKey("a") == true)
+            {
+                MoveLeft();
+            }
+            if (Input.GetKeyDown("space") == true)
+            {
+                Jump();
+            }
         }
-        if(Input.GetKey("a") == true){
-            MoveLeft();
-        }
-        if(Input.GetKeyDown("space") == true)
+        if (camera.transform.position.y <= gameObject.transform.position.y)
         {
-            Jump();
+            canMove = true;
         }
+        
         
     }
     //Moves the player right
