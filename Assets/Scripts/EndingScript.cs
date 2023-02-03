@@ -13,12 +13,12 @@ public class EndingScript : MonoBehaviour
     GameObject playerObj;
     PlayerScript script;
     int acorns;
-    public int totalAcorns;
+    public int totalAcorns = 5;
     float timer = 0;
     int seconds;
     int minutes;
     int totalTime;
-    public int threeStarTime;
+    int threeStarTime = 100;
     [SerializeField] bool star1;
     [SerializeField] bool star2;
     [SerializeField] bool star3;
@@ -28,6 +28,7 @@ public class EndingScript : MonoBehaviour
         playerObj = GameObject.FindGameObjectWithTag("Player");
         script = playerObj.GetComponent<PlayerScript>();
         acorns = script.GetAcornCounter();
+        //SaveDataManager.instance.Load();
     }
 
     // Update is called once per frame
@@ -46,6 +47,8 @@ public class EndingScript : MonoBehaviour
         star1 = true;
         //Converts time to seconds
         totalTime = (minutes * 60) + seconds;
+        Debug.Log(totalTime);
+        Debug.Log(threeStarTime);
         if(totalTime <= threeStarTime)
         {
             star3 = true;
@@ -68,8 +71,19 @@ public class EndingScript : MonoBehaviour
             star2 = false;
             
         }
-        //Todo: Save data for access elsewhere
-        JsonUtility.ToJson((star1,star2,star3));
+        if(SaveDataManager.instance.gamedata.savedStar1 != true)
+        {
+            SaveDataManager.instance.gamedata.savedStar1 = star1;
+        }
+        if (SaveDataManager.instance.gamedata.savedStar2 != true)
+        {
+            SaveDataManager.instance.gamedata.savedStar2 = star2;
+        }
+        if (SaveDataManager.instance.gamedata.savedStar3 != true)
+        {
+            SaveDataManager.instance.gamedata.savedStar3 = star3;
+        }
+        SaveDataManager.instance.Save();
     }
     void OnTriggerEnter2D(Collider2D other)
     {

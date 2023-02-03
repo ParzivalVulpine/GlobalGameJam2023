@@ -22,7 +22,8 @@ public class PlayerScript : MonoBehaviour
     public int acornCounter = 0;
     bool canMove = false;
     public Camera camera;
-   
+    
+
     // Update is called once per frame
     void Update()
     {
@@ -76,8 +77,12 @@ public class PlayerScript : MonoBehaviour
     //Resets the jumpCounter to zero upon colliding with an object
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(collision.gameObject.tag == "Ground")
+        {
+            jumpCounter = 0;
+        }
        
-         jumpCounter = 0;
+         
         
     }
     private void OnTriggerEnter2D(Collider2D collision)
