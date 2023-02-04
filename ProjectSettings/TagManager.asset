@@ -34,13 +34,28 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Sky
+  - Tree
+  - Platforms
+  - Hazzards
   - Player
   - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sky
+    uniqueID: 2032537365
+    locked: 0
+  - name: Tree
+    uniqueID: 2624093953
+    locked: 0
+  - name: Platforms
+    uniqueID: 1146187985
+    locked: 0
+  - name: Hazzards
+    uniqueID: 1251490859
+    locked: 0
+  - name: Player
+    uniqueID: 3010477625
     locked: 0
