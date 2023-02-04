@@ -26,17 +26,18 @@ public class SaveDataManager : MonoBehaviour
         serializer.Serialize(stream, gamedata);
         stream.Close();
     }
-    public void Load(string filename)
+    public SaveData Load(string filename)
     {
         string dataPath = Application.persistentDataPath;
-        Debug.Log(dataPath + '\\' + filename + ".txt");
         if(System.IO.File.Exists(dataPath + "\\" + filename + ".txt")){
             var serializer = new XmlSerializer(typeof(SaveData));
             var stream = new FileStream(dataPath + "\\" + filename + ".txt", FileMode.Open);
             gamedata = serializer.Deserialize(stream) as SaveData;
             stream.Close();
             hasLoaded = true;
+            return gamedata;
         }
+        return gamedata;
     }
     public void Delete()
     {

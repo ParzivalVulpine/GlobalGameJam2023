@@ -17,10 +17,11 @@ public class PlayerScript : MonoBehaviour
     public Rigidbody2D rb;
     float jump = 10;
     float moveSpeed = 10;
+    int health = 3;
     int jumpCounter = 0;
     int numOfJumps = 2;
     public int acornCounter = 0;
-    bool canMove = false;
+    public bool canMove = false;
     public Camera camera;
     
 
@@ -81,6 +82,16 @@ public class PlayerScript : MonoBehaviour
         {
             jumpCounter = 0;
         }
+        if(collision.gameObject.tag == "Brambles")
+        {
+
+        }
+        if(collision.gameObject.tag == "BreakablePlatform")
+        {
+            jumpCounter = 0;
+            
+
+        }
        
          
         
@@ -90,11 +101,12 @@ public class PlayerScript : MonoBehaviour
         if (collision.gameObject.tag == "Acorn")
         {
             acornCounter++;
+            Destroy(collision.gameObject);
         }
         
         
         
-        Destroy(collision.gameObject);
+        
     }
     //Checks if player can jump
     private bool checkJump()

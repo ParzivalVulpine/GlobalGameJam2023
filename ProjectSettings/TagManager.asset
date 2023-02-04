@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - End
   - Acorn
+  - Brambles
+  - BreakablePlatform
   layers:
   - Default
   - TransparentFX

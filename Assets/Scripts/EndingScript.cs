@@ -22,13 +22,14 @@ public class EndingScript : MonoBehaviour
     [SerializeField] bool star1;
     [SerializeField] bool star2;
     [SerializeField] bool star3;
+    SaveData data;
     // Start is called before the first frame update
     void Start()
     {
         playerObj = GameObject.FindGameObjectWithTag("Player");
         script = playerObj.GetComponent<PlayerScript>();
         acorns = script.GetAcornCounter();
-        //SaveDataManager.instance.Load();
+        
     }
 
     // Update is called once per frame
@@ -44,11 +45,11 @@ public class EndingScript : MonoBehaviour
     // Checks conditions for stars
     public void Completed()
     {
+        script.canMove = false;
         star1 = true;
         //Converts time to seconds
         totalTime = (minutes * 60) + seconds;
-        Debug.Log(totalTime);
-        Debug.Log(threeStarTime);
+        data = SaveDataManager.instance.Load(SaveDataManager.instance.gamedata.level);
         if(totalTime <= threeStarTime)
         {
             star3 = true;
@@ -71,17 +72,17 @@ public class EndingScript : MonoBehaviour
             star2 = false;
             
         }
-        if(SaveDataManager.instance.gamedata.savedStar1 != true)
+        if(data.savedStar1 != true)
         {
-            SaveDataManager.instance.gamedata.savedStar1 = star1;
+            data.savedStar1 = star1;
         }
-        if (SaveDataManager.instance.gamedata.savedStar2 != true)
+        if (data.savedStar2 != true)
         {
-            SaveDataManager.instance.gamedata.savedStar2 = star2;
+            data.savedStar2 = star2;
         }
-        if (SaveDataManager.instance.gamedata.savedStar3 != true)
+        if (data.savedStar3 != true)
         {
-            SaveDataManager.instance.gamedata.savedStar3 = star3;
+            data.savedStar3 = star3;
         }
         SaveDataManager.instance.Save();
     }
@@ -91,17 +92,5 @@ public class EndingScript : MonoBehaviour
         {
             Completed();
         }
-    }
-    public bool GetStar1()
-    {
-        return star1;
-    }
-    public bool GetStar2()
-    {
-        return star2;
-    }
-    public bool GetStar3()
-    {
-        return star3;
     }
 }
