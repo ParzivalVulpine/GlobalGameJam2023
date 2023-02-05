@@ -131,12 +131,21 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 6812984}
   - component: {fileID: 6812986}
   - component: {fileID: 6812985}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
+=======
+  - component: {fileID: 193011812}
+  - component: {fileID: 193011814}
+  - component: {fileID: 193011813}
+  m_Layer: 0
+  m_Name: Square (9)
+  m_TagString: Ground
+>>>>>>> Stashed changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -475,11 +484,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 193011812}
   - component: {fileID: 193011814}
   - component: {fileID: 193011813}
   m_Layer: 28
   m_Name: Square (9)
+=======
+  - component: {fileID: 449976901}
+  - component: {fileID: 449976903}
+  - component: {fileID: 449976902}
+  m_Layer: 0
+  m_Name: Square (4)
+>>>>>>> Stashed changes
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -605,11 +622,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 449976901}
   - component: {fileID: 449976903}
   - component: {fileID: 449976902}
   m_Layer: 28
   m_Name: Square (4)
+=======
+  - component: {fileID: 472875193}
+  - component: {fileID: 472875195}
+  - component: {fileID: 472875194}
+  m_Layer: 0
+  m_Name: Square (14)
+>>>>>>> Stashed changes
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -735,11 +760,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 472875193}
   - component: {fileID: 472875195}
   - component: {fileID: 472875194}
   m_Layer: 28
   m_Name: Square (14)
+=======
+  - component: {fileID: 481450437}
+  - component: {fileID: 481450439}
+  - component: {fileID: 481450438}
+  m_Layer: 0
+  m_Name: Square (15)
+>>>>>>> Stashed changes
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -995,11 +1028,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 491818182}
   - component: {fileID: 491818184}
   - component: {fileID: 491818183}
   m_Layer: 28
   m_Name: Square (21)
+=======
+  - component: {fileID: 601195444}
+  - component: {fileID: 601195446}
+  - component: {fileID: 601195445}
+  m_Layer: 0
+  m_Name: Square (10)
+>>>>>>> Stashed changes
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1125,12 +1166,21 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 509062965}
   - component: {fileID: 509062967}
   - component: {fileID: 509062966}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
+=======
+  - component: {fileID: 640212246}
+  - component: {fileID: 640212248}
+  - component: {fileID: 640212247}
+  m_Layer: 0
+  m_Name: Square (3)
+  m_TagString: Ground
+>>>>>>> Stashed changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1390,11 +1440,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 601195444}
   - component: {fileID: 601195446}
   - component: {fileID: 601195445}
   m_Layer: 28
   m_Name: Square (10)
+=======
+  - component: {fileID: 692978407}
+  - component: {fileID: 692978409}
+  - component: {fileID: 692978408}
+  m_Layer: 0
+  m_Name: Square (5)
+>>>>>>> Stashed changes
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1520,11 +1578,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 640212246}
   - component: {fileID: 640212248}
   - component: {fileID: 640212247}
   m_Layer: 28
   m_Name: Square (3)
+=======
+  - component: {fileID: 698812423}
+  - component: {fileID: 698812425}
+  - component: {fileID: 698812424}
+  m_Layer: 0
+  m_Name: Square (8)
+>>>>>>> Stashed changes
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1650,11 +1716,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 670741888}
   - component: {fileID: 670741890}
   - component: {fileID: 670741889}
   m_Layer: 28
   m_Name: Square (18)
+=======
+  - component: {fileID: 708463186}
+  - component: {fileID: 708463188}
+  - component: {fileID: 708463187}
+  m_Layer: 0
+  m_Name: Square (6)
+>>>>>>> Stashed changes
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1796,6 +1870,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 692978406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.278701, y: 23, z: -0.05336132}
@@ -1807,6 +1882,19 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &692978408
 BoxCollider2D:
+=======
+  m_GameObject: {fileID: 740882947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 044dbf2083f0a284c8588a8dae62be43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followObject: {fileID: 2055380787}
+  followOffset: {x: 0, y: 30}
+  speed: 50
+--- !u!81 &740882949
+AudioListener:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1910,11 +1998,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 698812423}
   - component: {fileID: 698812425}
   - component: {fileID: 698812424}
   m_Layer: 28
   m_Name: Square (8)
+=======
+  - component: {fileID: 853754850}
+  - component: {fileID: 853754852}
+  - component: {fileID: 853754851}
+  m_Layer: 0
+  m_Name: Square (13)
+>>>>>>> Stashed changes
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2040,11 +2136,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 708463186}
   - component: {fileID: 708463188}
   - component: {fileID: 708463187}
   m_Layer: 28
   m_Name: Square (6)
+=======
+  - component: {fileID: 919431081}
+  - component: {fileID: 919431083}
+  - component: {fileID: 919431082}
+  m_Layer: 0
+  m_Name: Square (2)
+>>>>>>> Stashed changes
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2175,8 +2279,13 @@ GameObject:
   - component: {fileID: 740882949}
   - component: {fileID: 740882948}
   m_Layer: 0
+<<<<<<< Updated upstream
   m_Name: Main Camera
   m_TagString: MainCamera
+=======
+  m_Name: Square
+  m_TagString: Ground
+>>>>>>> Stashed changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2408,10 +2517,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 897277177}
   m_Layer: 5
   m_Name: Stars
   m_TagString: Untagged
+=======
+  - component: {fileID: 964791596}
+  - component: {fileID: 964791598}
+  - component: {fileID: 964791597}
+  m_Layer: 0
+  m_Name: Square (17)
+  m_TagString: Ground
+>>>>>>> Stashed changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2577,12 +2695,21 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 956188007}
   - component: {fileID: 956188009}
   - component: {fileID: 956188008}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
+=======
+  - component: {fileID: 1126162729}
+  - component: {fileID: 1126162731}
+  - component: {fileID: 1126162730}
+  m_Layer: 0
+  m_Name: Square (11)
+  m_TagString: Ground
+>>>>>>> Stashed changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2787,11 +2914,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 964791596}
   - component: {fileID: 964791598}
   - component: {fileID: 964791597}
   m_Layer: 28
   m_Name: Square (17)
+=======
+  - component: {fileID: 1299049785}
+  - component: {fileID: 1299049787}
+  - component: {fileID: 1299049786}
+  m_Layer: 0
+  m_Name: Square (12)
+>>>>>>> Stashed changes
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9818,11 +9953,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 2020656633}
   - component: {fileID: 2020656635}
   - component: {fileID: 2020656634}
   m_Layer: 28
   m_Name: Square (7)
+=======
+  - component: {fileID: 1929706381}
+  - component: {fileID: 1929706383}
+  - component: {fileID: 1929706382}
+  m_Layer: 0
+  m_Name: Square (16)
+>>>>>>> Stashed changes
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9948,6 +10091,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 2055380793}
   - component: {fileID: 2055380792}
   - component: {fileID: 2055380791}
@@ -9957,6 +10101,14 @@ GameObject:
   m_Layer: 30
   m_Name: Player
   m_TagString: Untagged
+=======
+  - component: {fileID: 2017022354}
+  - component: {fileID: 2017022356}
+  - component: {fileID: 2017022355}
+  m_Layer: 0
+  m_Name: Square (1)
+  m_TagString: Ground
+>>>>>>> Stashed changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10201,7 +10353,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
 --- !u!61 &2104765420
+=======
+--- !u!1 &2020656632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2020656633}
+  - component: {fileID: 2020656635}
+  - component: {fileID: 2020656634}
+  m_Layer: 0
+  m_Name: Square (7)
+  m_TagString: Ground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2020656633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020656632}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 29, z: -0.05336132}
+  m_LocalScale: {x: 34.89069, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1291533253}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2020656634
+>>>>>>> Stashed changes
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10261,16 +10450,17 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 3
+  m_Material: {fileID: 6200000, guid: 962cda80e6390d14386a08c418e80891, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
+<<<<<<< Updated upstream
   m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!114 &2104765422
@@ -10323,6 +10513,11 @@ Transform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2123542875
+=======
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!61 &2055380789
+>>>>>>> Stashed changes
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10331,7 +10526,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2123542873}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 962cda80e6390d14386a08c418e80891, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -10408,6 +10603,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< Updated upstream
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10419,6 +10615,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2055380792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055380787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72be828d77cc48c4f8ce90c0fd822139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2055380788}
+  jump: 40
+  moveSpeed: 30
+  jumpCounter: 0
+  numOfJumps: 2
+  acornCounter: 0
+  accceleration: 5
+  maxSpeed: 30
+  canMove: 0
+  camera: {fileID: 740882950}
+--- !u!4 &2055380793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055380787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.81, y: 1.15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
 --- !u!1001 &6974500111064494531
 PrefabInstance:
   m_ObjectHideFlags: 0
