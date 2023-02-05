@@ -24,12 +24,14 @@ public class EndingScript : MonoBehaviour
     [SerializeField] bool star2;
     [SerializeField] bool star3;
     SaveData data;
+    public string level;
     // Start is called before the first frame update
     void Start()
     {
         playerObj = GameObject.FindGameObjectWithTag("Player");
         script = playerObj.GetComponent<PlayerScript>();
         acorns = script.GetAcornCounter();
+        data = SaveDataManager.instance.Load(level);
         
     }
 
@@ -46,12 +48,14 @@ public class EndingScript : MonoBehaviour
     // Checks conditions for stars
     public void Completed()
     {
+        star1 = true;
+        data.savedStar1 = star1;
         canvas.SetActive(true);
         script.canMove = false;
-        star1 = true;
+        
         //Converts time to seconds
         totalTime = (minutes * 60) + seconds;
-        data = SaveDataManager.instance.Load(SaveDataManager.instance.gamedata.level);
+        //data = SaveDataManager.instance.Load(level);
         if(totalTime <= threeStarTime)
         {
             star3 = true;
@@ -74,10 +78,11 @@ public class EndingScript : MonoBehaviour
             star2 = false;
             
         }
-        if(data.savedStar1 != true)
-        {
-            data.savedStar1 = star1;
-        }
+
+        
+        
+        
+        
         if (data.savedStar2 != true)
         {
             data.savedStar2 = star2;
@@ -87,6 +92,7 @@ public class EndingScript : MonoBehaviour
             data.savedStar3 = star3;
         }
         SaveDataManager.instance.Save();
+        
     }
     void OnTriggerEnter2D(Collider2D other)
     {

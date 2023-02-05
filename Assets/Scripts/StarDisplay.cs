@@ -17,7 +17,7 @@ public class StarDisplay : MonoBehaviour
     bool starsDisplayed = false;
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         level1 = SaveDataManager.instance.Load("level1");
         level2 = SaveDataManager.instance.Load("level2");

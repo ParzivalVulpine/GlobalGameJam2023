@@ -17,13 +17,17 @@ public class PlayerScript : MonoBehaviour
     public Rigidbody2D rb;
     float jump = 10;
     float moveSpeed = 10;
-    int health = 3;
     int jumpCounter = 0;
     int numOfJumps = 2;
     public int acornCounter = 0;
     public bool canMove = false;
     public Camera camera;
-    
+    Vector3 start;
+
+    private void Start()
+    {
+        start = new Vector3(gameObject.transform.position.x,gameObject.transform.position.y,gameObject.transform.position.z);
+    }
 
     // Update is called once per frame
     void Update()
@@ -48,6 +52,7 @@ public class PlayerScript : MonoBehaviour
         {
             canMove = true;
         }
+        
         
         
     }
@@ -78,15 +83,15 @@ public class PlayerScript : MonoBehaviour
     //Resets the jumpCounter to zero upon colliding with an object
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ground")
+        if(collision.gameObject.tag == "Ground" && gameObject.transform.position.y > collision.gameObject.transform.position.y)
         {
             jumpCounter = 0;
         }
         if(collision.gameObject.tag == "Brambles")
         {
-
+            gameObject.transform.position = new Vector3(start.x, start.y, start.z);
         }
-        if(collision.gameObject.tag == "BreakablePlatform")
+        if(collision.gameObject.tag == "BreakablePlatform" && gameObject.transform.position.y > collision.gameObject.transform.position.y)
         {
             jumpCounter = 0;
             
