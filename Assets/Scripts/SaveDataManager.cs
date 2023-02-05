@@ -11,19 +11,18 @@ public class SaveDataManager : MonoBehaviour
     public static SaveDataManager instance;
     public SaveData gamedata = new SaveData();
     public bool hasLoaded;
-    public SaveData nothing = new SaveData();
     private void Awake()
     {
         instance = this;
         
         
     }
-    public void Save()
+    public void Save(SaveData data)
     {
         string dataPath = Application.persistentDataPath;
         var serializer = new XmlSerializer(typeof(SaveData));
-        var stream = new FileStream(dataPath + "\\" + gamedata.level +".txt",FileMode.Create);
-        serializer.Serialize(stream, gamedata);
+        var stream = new FileStream(dataPath + "\\" + data.level +".txt",FileMode.Create);
+        serializer.Serialize(stream, data);
         stream.Close();
     }
     public SaveData Load(string filename)
@@ -38,7 +37,7 @@ public class SaveDataManager : MonoBehaviour
             hasLoaded = true;
             return gamedata;
         }
-        return nothing;
+        return null;
     }
     public void Delete()
     {

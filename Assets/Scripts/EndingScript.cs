@@ -20,9 +20,7 @@ public class EndingScript : MonoBehaviour
     int minutes;
     int totalTime;
     public int threeStarTime;
-    [SerializeField] bool star1;
-    [SerializeField] bool star2;
-    [SerializeField] bool star3;
+    
     SaveData data;
     public string level;
     // Start is called before the first frame update
@@ -31,7 +29,7 @@ public class EndingScript : MonoBehaviour
         playerObj = GameObject.FindGameObjectWithTag("Player");
         script = playerObj.GetComponent<PlayerScript>();
         acorns = script.GetAcornCounter();
-        data = SaveDataManager.instance.Load(level);
+        
         
     }
 
@@ -48,51 +46,35 @@ public class EndingScript : MonoBehaviour
     // Checks conditions for stars
     public void Completed()
     {
-        star1 = true;
-        data.savedStar1 = star1;
+        
         canvas.SetActive(true);
         script.canMove = false;
         
         //Converts time to seconds
         totalTime = (minutes * 60) + seconds;
-        //data = SaveDataManager.instance.Load(level);
-        if(totalTime <= threeStarTime)
-        {
-            star3 = true;
+        data = SaveDataManager.instance.Load(level);
+        if(data == null ) {
+            data = new SaveData();    
         }
-        else
+    
+        
+        
+        data.savedStar1 = true;
+        data.level= level;
+        
+        if (totalTime <= threeStarTime)
         {
-            star3 = false;
-            
+            data.savedStar3 = true;
         }
+        
         //Gets value of the acornCounter variable from the PlayerScript
         acorns = script.GetAcornCounter();
         
         if(acorns == totalAcorns)
         {
-            star2 = true;
-            
+            data.savedStar2 = true;
         }
-        else
-        {
-            star2 = false;
-            
-        }
-
-        
-        
-        
-        
-        if (data.savedStar2 != true)
-        {
-            data.savedStar2 = star2;
-        }
-        if (data.savedStar3 != true)
-        {
-            data.savedStar3 = star3;
-        }
-        SaveDataManager.instance.Save();
-        
+        SaveDataManager.instance.Save(data);
     }
     void OnTriggerEnter2D(Collider2D other)
     {
