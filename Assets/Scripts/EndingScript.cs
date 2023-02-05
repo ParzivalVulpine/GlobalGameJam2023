@@ -12,8 +12,9 @@ public class EndingScript : MonoBehaviour
 {
     GameObject playerObj;
     PlayerScript script;
+    public GameObject canvas;
     int acorns;
-    public int totalAcorns = 5;
+    public int totalAcorns = 3;
     float timer = 0;
     int seconds;
     int minutes;
@@ -45,6 +46,7 @@ public class EndingScript : MonoBehaviour
     // Checks conditions for stars
     public void Completed()
     {
+        canvas.SetActive(true);
         script.canMove = false;
         star1 = true;
         //Converts time to seconds
@@ -91,6 +93,7 @@ public class EndingScript : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             Completed();
+            
         }
     }
 }

@@ -37,7 +37,7 @@ public class SaveDataManager : MonoBehaviour
             hasLoaded = true;
             return gamedata;
         }
-        return gamedata;
+        return null;
     }
     public void Delete()
     {
